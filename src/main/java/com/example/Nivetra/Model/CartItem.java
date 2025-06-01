@@ -1,15 +1,26 @@
 package com.example.Nivetra.Model;
 
 import jakarta.persistence.*;
+<<<<<<< HEAD
 
 @Entity
 public class CartItem {
 
+=======
+import lombok.*;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CartItem {
+>>>>>>> decb205 (added updated files)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
+<<<<<<< HEAD
     private Product product;
 
     public Product getProduct() {
@@ -39,4 +50,13 @@ public class CartItem {
 
     // Getters and setters
     // ...
+=======
+    
+    private Product product;
+
+    @ManyToOne
+    private User user;
+
+    private int quantity;
+>>>>>>> decb205 (added updated files)
 }

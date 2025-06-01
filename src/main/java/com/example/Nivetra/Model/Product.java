@@ -1,10 +1,20 @@
 package com.example.Nivetra.Model;
 
 import jakarta.persistence.*;
+<<<<<<< HEAD
 
 @Entity
 public class Product {
 
+=======
+import lombok.*;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Product {
+>>>>>>> decb205 (added updated files)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -13,6 +23,7 @@ public class Product {
     private String description;
     private double price;
     private String imageUrl;
+<<<<<<< HEAD
 
     public Product() {}
 
@@ -64,3 +75,8 @@ public class Product {
     }
 
 }
+=======
+    private String category;
+}
+
+>>>>>>> decb205 (added updated files)
